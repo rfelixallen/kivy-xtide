@@ -1,2 +1,2 @@
 # kivy-xtide
-An implimentation of xtide using Kivy
+An implimentation of xtide using Kivy.
