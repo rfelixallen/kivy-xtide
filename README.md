@@ -62,18 +62,18 @@ One last word about OpenGL version. The version supported by Windows is determin
 
 ## Resources
 ### Kivy Application Framework
--Kivy Documentation: https://kivy.org/doc/stable/
--Kivy Docs - Installing Kivy: https://kivy.org/doc/stable/gettingstarted/installation.html
--Kivy Docs - API Reference: https://kivy.org/doc/stable/api-kivy.html
--Kivy Garden: https://github.com/kivy-garden
--Kivy Garden - Graphs: https://github.com/kivy-garden/graph
+- Kivy Documentation: https://kivy.org/doc/stable/
+- Kivy Docs - Installing Kivy: https://kivy.org/doc/stable/gettingstarted/installation.html
+- Kivy Docs - API Reference: https://kivy.org/doc/stable/api-kivy.html
+- Kivy Garden: https://github.com/kivy-garden
+- Kivy Garden - Graphs: https://github.com/kivy-garden/graph
 
 ### xTide
--xTide Source Code: https://flaterco.com/xtide/xtide.html
--tidepredict: https://github.com/windcrusader/tidepredict
+- xTide Source Code: https://flaterco.com/xtide/xtide.html
+- tidepredict: https://github.com/windcrusader/tidepredict
 
 ### WSL2 
--Installation and Upgrade docs: https://docs.microsoft.com/en-us/windows/wsl/install-win10
--Install X11 Server: https://thomasward.com/wsl2-x11/
--Fixing OpenGL Direct Rendering version: https://github.com/microsoft/WSL/discussions/6154
--Mesa Drivers: https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers/ 
+- Installation and Upgrade docs: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+- Install X11 Server: https://thomasward.com/wsl2-x11/
+- Fixing OpenGL Direct Rendering version: https://github.com/microsoft/WSL/discussions/6154
+- Mesa Drivers: https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers/ 
