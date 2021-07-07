@@ -35,7 +35,7 @@ You should get a happy Kivy window with some graphics. Otherwise, Kivy will show
 I have been developing this application on Ubuntu 20.04 by way of WSL2, which has been *challenging*. The main headache is running an X11 server on the Windows host, and getting direct rendering of OpenGL to pass to the host machine. If you are on macOS or Ubuntu, your mileage may vary.
 
 ### WSL2 Issues
-### WSL1 vs WSL2
+#### WSL1 vs WSL2
 To start, make sure you are using WSL2 and not WSL1. Depending on when you installed Ubuntu from the Microsoft App Store, you may or may not be on 1. For more information, refer to Microsoft's installation documentation: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 
