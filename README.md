@@ -29,6 +29,7 @@ Run the application
 ```
 python3 kivy_venv/main.py
 ```
+You should get a happy Kivy window with some graphics. Otherwise, Kivy will show you a log in the terminal with your build errors.
 
 ## Troubleshooting
 I have been developing this application on Ubuntu 20.04 by way of WSL2, which has been *challenging*. The main headache is running an X11 server on the Windows host, and getting direct rendering of OpenGL to pass to the host machine. If you are on macOS or Ubuntu, your mileage may vary.
@@ -46,8 +47,15 @@ You must use an X11 Server on the Windows side to use Kivy. I had installed it b
 **Testing OpenGL settings**
 Once you have the correct version of Ubuntu, a functioning X11 server, and the mesa drivers needed to run OpenGL > v2, you can easily test it by running the following command.
 ```
-
+glxinfo -B
 ``` 
+The resulting information should tell you if direct rendering is in use, what driver is facilitating direct rendering, and what version of OpenGL is detected. If direct rendering is not in use, try the following command, and run glxinfo again.
+```
+export LIBGL_ALWAYS_INDIRECT=0
+```
+Supposedly, WSL2 has a config file set to force this value to be '1'. Other posts I read claimed one could set this in .bashrc. I found that setting the above command in .bashrc does not work as intended, but sourcing .bashrc then does work. Strange WSL2 ghosts, and I have not solved that issue as I want to move on to actually developing this application.
+
+One last word about OpenGL version. The version supported by Windows is determined by the graphics drivers. If you use an integrated graphics chip, then you need to update the drivers for your CPU. If you have a graphics card, you need to make sure those graphics drivers are up-to-date AND that Windows is defaulting to those drivers when using OpenGL. I had to download the Nvidia Control Panel to force my Windows to use those drivers.
 
 ## Resources
 ### Kivy Application Framework
